@@ -1,5 +1,5 @@
 import Analyzer from "./components/Analyzer";
-import { HeroSection } from "./components/heroSection";
+import { HeroSection } from "./components/HeroSection";
 
 
 
