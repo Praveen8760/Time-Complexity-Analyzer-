@@ -1,0 +1,58 @@
+{
+  "name": "time-complexity-analyzer",
+  "displayName": "Time Complexity Analyzer",
+  "description": "Analyze the time complexity of your code using an AI backend.",
+  "version": "0.0.1",
+  "publisher": "Praveen T",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:time-complexity-analyzer.analyzeCode"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "time-complexity-analyzer.analyzeCode",
+        "title": "Analyze Time Complexity"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "time-complexity-analyzer.enableAutoAnalyze": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable automatic analysis when the file is saved"
+        },
+        "time-complexity-analyzer.enableHighlighting": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable code highlighting based on time complexity"
+        },
+        "time-complexity-analyzer.autoAnalyzeOnSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically analyze the code when the file is saved"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.23.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
