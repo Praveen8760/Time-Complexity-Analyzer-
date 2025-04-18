@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios");
-const { generatePrompt } = require("../../shared/prompt");
+const { generatePrompt } = require("../utils/prompt");
 
 router.post("/", async (req, res) => {
   const { code, language } = req.body;
