@@ -15,7 +15,7 @@ const Analyzer = () => {
     setModalOpen(true);
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/analyze", {
+      const res = await axios.post("https://time-complexity-analyzer-production.up.railway.app/api/analyze", {
         code,
         language,
       });
