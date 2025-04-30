@@ -40,7 +40,7 @@ const Analyzer = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#020618] text-white px-4 py-6">
+    <div className="min-h-screen bg-[#020618] text-white px-2 py-6 top-0 z-10">
       {/* Tabs */}
       <div className="flex justify-center mb-6 relative">
         <div className="bg-neutral-800 border border-neutral-700 rounded-full p-1 flex gap-1">
